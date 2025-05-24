@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product View</title>
+    <link rel="stylesheet" href="css/style.css">
+    </head>
+<body>
+    <header>
+        <?php include 'header.html'; ?>
+    </header>
+
+    <main>
+        <section id="product-details">
+            <h1 id="product-title">Product Title</h1>
+            <div class="product-images">
+                <img id="product-image-main" src="images/product1.jpg" alt="Product Main">
+                <div class="product-images-thumbs">
+                    <img src="images/product1-thumb.jpg" alt="Product Thumb 1">
+                    <img src="images/product2-thumb.jpg" alt="Product Thumb 2">
+                    </div>
+            </div>
+            <p id="product-description">Product Description</p>
+            <p id="product-price">$100</p>
+            <div id="product-ratings">
+                </div>
+            <button id="add-to-cart">Add to Cart</button>
+        </section>
+
+        <section id="related-products">
+            <h2>Related Products</h2>
+            <div class="product-list">
+                <div class="product-item">
+                    <img src="images/product1.jpg" alt="Product 1">
+                    <h3>Product 1</h3>
+                    <p>$100</p>
+                    <a href="product-view.html?id=1">View</a>
+                </div>
+                <div class="product-item">
+                    <img src="images/product2.jpg" alt="Product 2">
+                    <h3>Product 2</h3>
+                    <p>$150</p>
+                    <a href="product-view.html?id=2">View</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <?php include 'footer.html'; ?>
+    </footer>
+    <script src="js/scroll-to-top.js"></script>
+    <script src="js/product-view.js"></script>  </body>
+</html>

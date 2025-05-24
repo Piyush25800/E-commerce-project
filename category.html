@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Category</title>
+    <link rel="stylesheet" href="css/style.css">
+    </head>
+<body>
+    <header>
+        <?php include 'header.html'; ?>
+    </header>
+
+    <main>
+        <section id="category-header">
+            <h1 id="category-title">Category Title</h1>
+            <img id="category-image" src="images/category-image.jpg" alt="Category">
+            <p id="category-description">Category Description</p>
+        </section>
+
+        <section id="category-products">
+            <h2>Products in this Category</h2>
+            <div class="product-list">
+                <div class="product-item">
+                    <img src="images/product1.jpg" alt="Product 1">
+                    <h3>Product 1</h3>
+                    <p>$100</p>
+                    <a href="product-view.html?id=1">View</a>
+                </div>
+                <div class="product-item">
+                    <img src="images/product2.jpg" alt="Product 2">
+                    <h3>Product 2</h3>
+                    <p>$150</p>
+                    <a href="product-view.html?id=2">View</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <?php include 'footer.html'; ?>
+    </footer>
+     <script src="js/scroll-to-top.js"></script>
+    <script src="js/category.js"></script>  </body>
+</html>
